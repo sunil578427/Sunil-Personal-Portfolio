@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil - Personal Portfolio</title>
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1abc9c;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+            transition: 0.3s;
+        }
+
+        /* Sections General Style */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #1abc9c;
+            margin: 10px auto 0;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(26, 37, 47, 0.9), rgba(26, 37, 47, 0.9)), url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #bdc3c7;
+        }
+
+        .btn {
+            background-color: #1abc9c;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #16a085;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .skill-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* YouTube & Projects Section */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            background-color: #2c3e50;
+            color: #fff;
+            max-width: 100%;
+        }
+
+        /* Responsive Design (Media Query) */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 15px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            #hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Sunil_Growth</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Hi, I'm Sunil</h1>
+        <p>Web Developer | Programmer | Content Creator</p>
+        <a href="https://youtu.be/9PdkEu7TLK8?si=q-hWw5vcmu3n7g9I" target="_blank" class="btn">Visit My YouTube Channel</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+A dedicated and highly motivated Class 12th (NIOS) student with a passion for Data Analytics and Software Development. Actively building programming foundations in Java, Python, and Web Technologies. Seeking challenging internships to leverage my technical skills for organization growth        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: #eaeded; max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML5 & CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>JavaScript, Java</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Creative</h3>
+                    <p>Canva, CapCut</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / YouTube Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+                    <p>यह वही रिस्पॉन्सिव वेबसाइट है जिसे आप अभी देख रहे हैं। इसे HTML और CSS का उपयोग करके बनाया गया है।</p>
+                </div>
+            </div>
+            <!-- Project 2 (YouTube Showcase) -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>YouTube Video Tech Log</h3>
+                    <p>अपने चैनल पर मैं जो कोडिंग और टेक जर्नी शेयर करता हूँ, उसकी झलकियाँ यहाँ देखें।</p>
+                    <a href="https://www.youtube.com/@Sunils_Growthjourney" target="_blank" style="color: #1abc9c; font-weight: bold; display: inline-block; margin-top: 10px;">Check Channel →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title" style="color: #fff;">Let's Connect</h2>
+        <p>यदि आप मेरे किसी प्रोजेक्ट या कोडिंग जर्नी के बारे में चर्चा करना चाहते हैं, तो मुझसे संपर्क करें।</p>
+        <p style="margin-top: 20px; font-weight: bold; color: #1abc9c;">Email: sunil578427@gmail.com</p>
+    </section>
+
+</body>
+</html>
